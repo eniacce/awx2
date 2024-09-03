@@ -8,5 +8,6 @@
             msg: "Hello World"
     - name: Install packages
       apt:
+        sudo: yes
         name: apache2
         state: present

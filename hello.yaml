@@ -1,0 +1,11 @@
+- name: deneme
+  hosts: 10.10.55.15
+  tasks:
+    - name: "Install Nginx"
+      apt:
+        name: nginx
+        state: present
+    - name: "Start Nginx"
+      service:
+        name: nginx
+        state: started

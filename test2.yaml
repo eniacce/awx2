@@ -1,5 +1,7 @@
 - name: Create a file and add content using copy
   hosts: 10.10.55.15
+  become: yes
+  become_user: root
   tasks:
     - name: Create file and add content
       ansible.builtin.copy:

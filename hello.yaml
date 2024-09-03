@@ -1,5 +1,5 @@
 - name: deneme
-  hosts: 10.10.55.15
+  hosts: kml
   become: yes
   become_user: root
   tasks:

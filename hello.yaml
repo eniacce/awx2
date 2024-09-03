@@ -3,7 +3,6 @@
   become: yes
   become_user: ubuntu
   tasks:
-
     - name: debug messages
       debug:
             msg: "Hello World"

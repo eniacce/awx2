@@ -1,5 +1,5 @@
 - name: deneme
-  hosts: all
+  hosts: 10.10.55.15
   tasks:
 
     - name: debug messages

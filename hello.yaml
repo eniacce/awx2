@@ -8,6 +8,11 @@
             msg: "Hello World"
     - name: Install packages
       apt:
-        sudo: yes
         name: apache2
         state: present
+    - name: Start apache2
+      shell: echo 'test'>/tmp/deneme.txt
+    - name: Copy the file
+      copy:
+        src: /tmp/deneme.txt
+        dest: /tmp/deneme.txt

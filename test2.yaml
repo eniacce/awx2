@@ -1,0 +1,11 @@
+- name: Create a file and add content using copy
+  hosts: all
+  tasks:
+    - name: Create file and add content
+      ansible.builtin.copy:
+        content: "test salla2\n"
+        dest: /tmp/tr.txt
+    - name: fetch file
+      fetch:
+          src: /tmp/tr.txt
+          dest: /tmp/

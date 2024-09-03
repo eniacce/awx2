@@ -1,5 +1,4 @@
 - name: deneme
-  become: yes
   hosts: all
   tasks:
 

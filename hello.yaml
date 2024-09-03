@@ -1,6 +1,7 @@
 - name: deneme
   hosts: 10.10.55.15
   become_user: ubuntu
+  gather_facts: yes
   tasks:
     - name: debug messages
       debug:

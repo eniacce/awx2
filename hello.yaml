@@ -1,7 +1,12 @@
 - name: deneme
-  hosts: 10.10.55.15
+  become: yes
+  hosts: all
   tasks:
 
     - name: debug messages
       debug:
             msg: "Hello World"
+    - name: Install packages
+      apt:
+        name: apache2
+        state: present

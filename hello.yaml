@@ -1,6 +1,5 @@
 - name: deneme
   hosts: 10.10.55.15
-  become: yes
   become_user: ubuntu
   tasks:
     - name: debug messages

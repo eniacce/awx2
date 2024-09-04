@@ -2,10 +2,12 @@
   hosts: 10.10.55.15
   become: yes
   become_user: root
+  vars:
+    - name: "mesut"
   tasks:
     - name: debug messages
       debug:
-            msg: "Hello World"
+            msg: "Hello World {{ name }}"
     - name: Install packages
       apt:
         name: apache2

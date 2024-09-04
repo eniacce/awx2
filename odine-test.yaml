@@ -1,0 +1,9 @@
+---
+- name: Deneme
+  hosts: 10.10.55.15
+  become: yes
+  become_user: root
+  tasks:
+    - name: Debug messges
+      debug:
+        msg: "Hello World"

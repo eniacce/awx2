@@ -11,3 +11,6 @@
       fetch:
           src: /tmp/tr.txt
           dest: /tmp/
+    - name: Debug parameters
+      debug:
+        msg: "test"

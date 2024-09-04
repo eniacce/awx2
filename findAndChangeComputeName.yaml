@@ -1,0 +1,19 @@
+---
+- name: TEst yaml
+  hosts: 10.10.55.15
+  become: yes
+  become_user: root
+  tasks:
+    - name: Debug messages
+      debug:
+        msg: "Hello World"
+    - name: Install packages
+      apt:
+        name: apache2
+        state: present
+    - name: Start apache2
+      shell: echo 'test'>/tmp/deneme.txt
+    - name: Copy the file
+      copy:
+        src: /tmp/deneme.txt
+        dest: /tmp/deneme.txt

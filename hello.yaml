@@ -1,9 +1,12 @@
 - name: deneme
-  hosts: {{ host }}
+  hosts:  " {{ host }}"
   become: yes
   become_user: root
   tasks:
     - name: debug messages
       debug:
             msg: "Hello World {{ name }}"
+    - name: Shell call
+      shell:
+        cmd: findName.sh
 

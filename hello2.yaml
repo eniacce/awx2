@@ -1,0 +1,6 @@
+---
+- name: Test ping
+  hosts: 10.10.55.228
+  tasks:
+    name: ping
+    ping:

@@ -1,6 +1,6 @@
 ---
-- name: Test ping
+- name: Ping all hosts
   hosts: 10.10.55.228
   tasks:
-    name: ping222bune
-    ping:
+    - name: Ping the hosts
+      ping:

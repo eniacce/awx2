@@ -1,15 +1,8 @@
----
-- name: Download and execute findName.sh
+- name: deneme
   hosts: 10.10.55.228
-  become: yes
-  become_user: root
   tasks:
-    - name: Download findName.sh from GitHub
-      get_url:
-        url: https://github.com/eniacce/awx2/findName.sh
-        dest: /tmp/findName.sh
-        mode: '0755'
-
-    - name: Execute findName.sh
-      shell: /tmp/findName.sh
+    - name: SCommand call
+      cmd: ls -al
+    - name: Shell call
+      shell: echo $HOME
 

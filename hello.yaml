@@ -1,9 +1,8 @@
 - name: deneme
-  hosts:  10.10.55.228
+  hosts: 10.10.55.228
   become: yes
   become_user: root
   tasks:
     - name: Shell call
-      shell:
-        cmd: findName.sh
+      shell: findName.sh
 

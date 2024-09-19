@@ -3,6 +3,4 @@
   tasks:
     - name: SCommand call
       cmd: ls -al
-    - name: Shell call
-      shell: echo $HOME
 
